@@ -4,6 +4,7 @@ import gmail from '../images/gmail.jpg';
 import java from '../images/java.jpg';
 import portfolio from '../images/portfolio.jpg';
 import esp32 from '../images/esp32.jpg';
+import portfolio2 from '../images/portfolio2.jpg';
 import '../styles/projectCard.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -39,6 +40,14 @@ const projectList = [
     image: esp32,
     categories: ["C++", "ESP32"],
     link: "https://github.com/SamimAslan/arduino_post"
+  },
+  {
+    id: 5,
+    title: "Portfolio v2.0",
+    description: "Newest Portfolio that I've made as a Project",
+    image: portfolio2,
+    categories: ["React Ts"],
+    link: "https://github.com/SamimAslan/Portfolio"
   }
 ];
 

@@ -14,7 +14,6 @@ const VideosPage: React.FC = () => {
   };
 
   const renderVideoContent = (videoSrc: string) => {
-    // Check if the videoSrc is a YouTube link
     if (videoSrc.includes('youtu.be') || videoSrc.includes('youtube.com')) {
       const videoId = videoSrc.split('/').pop();
       const embedUrl = `https://www.youtube.com/embed/${videoId}`;
