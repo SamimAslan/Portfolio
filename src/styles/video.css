@@ -1,0 +1,49 @@
+.videos-page-container {
+  color: #fff;
+  padding: 32px;
+}
+
+.videos-title {
+  margin-bottom: 32px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 16px;
+}
+
+.video-item {
+  background-color: #333;
+
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.video-info {
+  padding: 16px;
+
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.video-item {
+  width: 90%
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-item {
+    width: 90%;
+  }
+}

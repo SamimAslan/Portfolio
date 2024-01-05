@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2em;
+  color: #61dafb;
+}

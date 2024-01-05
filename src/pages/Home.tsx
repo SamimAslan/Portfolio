@@ -1,0 +1,29 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from '../components/organisms/Sidebar';
+import HomePage from '../components/organisms/HomePage';
+import ProjectsPage from '../pages/ProjectsPage';
+import VideosPage from '../pages/VideosPage';
+import AboutPage from '../pages/AboutPage';
+import ContactPage from '../pages/ContactPage';
+
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+        <Sidebar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/videos" element={<VideosPage/>} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
+        </Routes>
+          </main>
+        </div>
+      </Router>
+    );
+  }
+  
+export default App;

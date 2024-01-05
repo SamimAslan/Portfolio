@@ -1,0 +1,68 @@
+.app-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  height: 100vh;
+}
+
+.main-content {
+  overflow-y: auto;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.header-title {
+  font-size: 2em;
+  color: #FFF;
+  text-align: left;
+
+}
+
+.homepage {
+  margin-left: 350px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.display {
+  display: none;
+}
+
+.project-box {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project-box-vertical-large {
+  grid-column: 3;
+  height: 190%;
+  width: 170%;
+}
+
+.homepage {
+  margin-left: 100px;
+  padding: 32px;
+}
+
+.project-box-second-row {
+  grid-column: 1;
+  grid-row: 2;
+}
